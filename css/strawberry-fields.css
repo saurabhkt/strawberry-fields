@@ -15,6 +15,16 @@
 	clear: both;
 }
 
+@font-face {
+	font-family: GothamBold;
+	src: url(/fonts/Gotham-Bold.woff);
+}
+
+* {
+	font-family: GothamBold;
+	box-sizing: border-box;
+}
+
 a:not('.download-link-inline') {
 	text-decoration: none !important;
 	color: #ffffff;
@@ -38,17 +48,48 @@ a, a:hover, a:focus {
 }
 
 body {
-	margin: 0px;
+	margin: 0 auto;
 	padding: 0px;
+	max-width: 1200px;
 }
 
-.background {
-	width: 100%;
-	height: auto;
+button {
+	height: 3.5em;
+	width: 13.5em;
+	padding: 0.5em;
+	cursor: pointer;
+	letter-spacing: 2px;
+	color: #ffffff;
+	background-color:  #e04a46;
+	border: 1px solid  #e04a46;
+	border-radius: 100px;
+	outline: none;
+		box-shadow: none !important;
+		-moz-box-shadow: none !important;
+		-webkit-box-shadow: none !important;
+	transition: all 0.1s ease-in;
+		-o-transition: all 0.1s ease-in;
+		-ms-transition: all 0.1s ease-in;
+		-moz-transition: all 0.1s ease-in;
+		-webkit-transition: all 0.1s ease-in;
+}
+
+button:hover, button:active, button:focus {
+	border-color: #ffffff;
+	color: #000000;
+	background-color: #ffffff;
+	outline: none;
+		box-shadow: none !important;
+		-moz-box-shadow: none !important;
+		-webkit-box-shadow: none !important;
 }
 
 nav {
 	height: 60px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 nav > div {
@@ -73,7 +114,29 @@ nav ul li {
 }
 
 nav ul li a {
-	color: #acacac;
+	color: #646464;
 	letter-spacing: 3px;
-	font-size: 12px;
+	font-size: 14px;
+}
+
+nav ul li a:hover {
+	color: #000000;
+	transition: all 0.1s ease-in;
+		-o-transition: all 0.1s ease-in;
+		-ms-transition: all 0.1s ease-in;
+		-moz-transition: all 0.1s ease-in;
+		-webkit-transition: all 0.1s ease-in;
+}
+
+#home .background {
+	width: 100%;
+	height: auto;
+}
+
+#home .content {
+	position: absolute;
+	top: 40%;
+	left: 0;
+	width: 100%;
+	text-align: center;
 }
