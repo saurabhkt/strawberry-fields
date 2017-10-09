@@ -47,10 +47,25 @@ a, a:hover, a:focus {
 	text-decoration: none;
 }
 
+hr {
+	width: 40%;
+	border: none;
+	height: 1px;
+	color: #b53969;
+	background-color: #b53969;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #b53969;
+}
+
 body {
 	margin: 0 auto;
 	padding: 0px;
 	max-width: 1200px;
+	background-color: #fbdedc;
 }
 
 button {
@@ -128,6 +143,10 @@ nav ul li a:hover {
 		-webkit-transition: all 0.1s ease-in;
 }
 
+.content {
+	padding: 0px 50px;
+}
+
 #home .background {
 	width: 100%;
 	height: auto;
@@ -140,3 +159,62 @@ nav ul li a:hover {
 	width: 100%;
 	text-align: center;
 }
+
+#SF2017 .info, #SF2017 .when-where {
+	display: inline-block;
+}
+
+#SF2017 .info {
+	width: 59%;
+}
+
+#SF2017 .when-where {
+	width: 39%;
+}
+
+#about .about-card {
+	display: inline-block;
+	width: 20%
+	height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
