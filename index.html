@@ -11,27 +11,53 @@
 		
 		<title>Strawberry Fields 2017 | NLSIU</title>
 
+		<link rel="icon" sizes="32x32" type="image/png" href="img/favicon.png">
+
 		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.css">
 		<link rel="stylesheet" href="/css/strawberry-fields.css?v=1.0">
 	</head>
 	<body>
 		<section id="home">
 			<nav id="navbar-main">
-				<div class="nav-menu">
-					<ul>
-						<li><a href="#SF2017">ABOUT THIS EDITION</a></li>
-						<li><a href="#about">ABOUT US</a></li>
-						<li><a href="#gallery">GALLERY</a></li>
-						<!-- <li><a href="#sponsors">SPONSORS</a></li> -->
-						<li><a href="#testimonials">TESTIMONIALS</a></li>
-						<li><a href="#contact">CONTACT</a></li>
-						<li><a href="#faq">FAQ</a></li>
-					</ul>
+				<div class="">
+					<div class="sm-menu">
+						<img src="/img/menu.svg">
+					</div>
+					<div class="nav-menu">
+						<div class="sm-menu-close">
+							<img src="/img/menu-close.svg">
+						</div>
+						<ul>
+							<li><a href="#SF2017">2017 EDITION</a></li>
+							<li><a href="#about">ABOUT US</a></li>
+							<li><a href="#gallery">GALLERY</a></li>
+							<!-- <li><a href="#sponsors">SPONSORS</a></li> -->
+							<li><a href="#testimonials">TESTIMONIALS</a></li>
+							<li><a href="#contact">CONTACT</a></li>
+							<li><a href="#faq">FAQ</a></li>
+						</ul>
+					</div>
+					<div class="sm-nav-menu">
+						<div class="sm-menu-close">
+							<img src="/img/menu-close.svg">
+						</div>
+						<ul>
+							<li><a href="#SF2017">2017 EDITION</a></li>
+							<li><a href="#about">ABOUT US</a></li>
+							<li><a href="#gallery">GALLERY</a></li>
+							<!-- <li><a href="#sponsors">SPONSORS</a></li> -->
+							<li><a href="#testimonials">TESTIMONIALS</a></li>
+							<li><a href="#contact">CONTACT</a></li>
+							<li><a href="#faq">FAQ</a></li>
+						</ul>
+					</div>
 				</div>
 			</nav>
 
+
 			<img class="background" src="/img/home.jpg">
-			
+			<img class="background-sm" src="/img/home-sm.jpg">
+
 			<div class="content">
 				<button>REGISTER NOW</button>
 			</div>
@@ -120,14 +146,15 @@
 				<h3>testimonials</h3>
 				<div id="fullpage-wrapper">
 					<div class="section">
-						<div class="slide">
+						<div class="slide" data-anchor="1">
 							<p>These ideas are nightmares to white parents Whose worst fear is a child with dyed hair and who likes earrings</p>
 							<h5>AATHMA</h5>
+						</div>
 
+						<div class="slide" data-anchor="2">
 							<p>These ideas are nightmares to white parents Whose worst fear is a child with dyed hair and who likes earrings</p>
 							<h5>JUNKYARD GROOVE</h5>
 						</div>
-
 					</div>
 				</div>
 
@@ -195,5 +222,6 @@
 
 		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.js"></script>
+		<script src="/js/strawberry-fields.js"></script>
 	</body>
 </html>

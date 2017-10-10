@@ -20,8 +20,13 @@
 	src: url(/fonts/Gotham-Bold.woff);
 }
 
+@font-face {
+	font-family: GothamBook;
+	src: url(/fonts/Gotham-Book.woff);
+}
+
 * {
-	font-family: GothamBold;
+	font-family: GothamBook;
 	box-sizing: border-box;
 }
 
@@ -73,7 +78,7 @@ button {
 	width: 13.5em;
 	padding: 0.5em;
 	cursor: pointer;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	color: #ffffff;
 	background-color:  #e04a46;
 	border: 1px solid  #e04a46;
@@ -117,6 +122,29 @@ nav .nav-menu {
 	text-align: center;
 }
 
+nav .sm-nav-menu {
+	display: none;
+	z-index: 1;
+}
+
+nav .sm-menu, nav .sm-menu-close {
+	display: none;
+	float: left;
+	height: 100%;
+	cursor: pointer;
+}
+
+nav .sm-menu img, nav .sm-menu-close img {
+	height: 16px;
+	width: auto;
+	margin: 15px;
+}
+
+nav .sm-menu-close img {
+	margin-right: 25px;
+	position: relative;
+}
+
 nav ul {
 	list-style: none;
 	margin: 15px;
@@ -143,11 +171,53 @@ nav ul li a:hover {
 		-webkit-transition: all 0.1s ease-in;
 }
 
+@media (max-width: 991px) {
+	nav > div {
+		height: 100%;
+		padding: 0px;
+	}
+
+	nav .nav-menu {
+		display: none;
+	}
+
+	nav .sm-nav-menu {
+		position: absolute;
+		left: 0;
+		height: 360px;
+		width: 100%;
+		background-color: rgba(181, 57, 105, 0.9);
+	}
+
+	nav .sm-nav-menu ul {
+		margin: 60px 0px;
+		padding: 0px;
+	}
+
+	nav .sm-nav-menu ul li {
+		display: block;
+		margin: 30px;
+		text-align: center;
+	}
+
+	nav .sm-nav-menu ul li a {
+		color: #ffffff;
+	}
+
+	nav .sm-menu, nav .sm-menu-close {
+		display: block;
+	}
+}
+
 .content {
 	padding: 0px 50px;
 }
 
-#home .background {
+#home .background-sm {
+	display: none;
+}
+
+#home .background,#home .background-sm {
 	width: 100%;
 	height: auto;
 }
@@ -158,6 +228,16 @@ nav ul li a:hover {
 	left: 0;
 	width: 100%;
 	text-align: center;
+}
+
+@media (max-width: 991px) {
+	#home .background {
+		display: none;
+	}
+
+	#home .background-sm {
+		display: block;
+	}
 }
 
 #SF2017 .info, #SF2017 .when-where {
