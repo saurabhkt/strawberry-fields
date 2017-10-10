@@ -258,6 +258,15 @@ nav ul li a:hover {
 	height: auto;
 }
 
+#testimonials .carousel-control {
+	background: none !important;
+}
+
+#testimonials-carousel {
+	height: 400px;
+	text-align: center;
+}
+
 
 
 

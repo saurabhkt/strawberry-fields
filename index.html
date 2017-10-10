@@ -13,7 +13,7 @@
 
 		<link rel="icon" sizes="32x32" type="image/png" href="img/favicon.png">
 
-		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.css">
+		<link rel="stylesheet" href="/css/bootstrap-custom.min.css?v=1.0">
 		<link rel="stylesheet" href="/css/strawberry-fields.css?v=1.0">
 	</head>
 	<body>
@@ -144,19 +144,51 @@
 		<section id="testimonials">
 			<div class="content">
 				<h3>testimonials</h3>
-				<div id="fullpage-wrapper">
+
+
+
+				<div id="testimonials-carousel" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#testimonials-carousel" data-slide-to="0" class="active"></li>
+						<li data-target="#testimonials-carousel" data-slide-to="1"></li>
+						<li data-target="#testimonials-carousel" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<p>These ideas are nightmares to white parents Whose worst fear is a child with dyed hair and who likes earrings</p>
+							<h5>AATHMA</h5>
+						</div>
+						<div class="item">
+							<p>These ideas are nightmares to white parents Whose worst fear is a child with dyed hair and who likes earrings</p>
+							<h5>JUNKYARD GROOVE</h5>
+						</div>
+						<div class="item">
+							<p>What what what what Isoterra Isoterra</p>
+							<h5>DUALIST INQUIRY</h5>
+						</div>
+					</div>
+					<a class="left carousel-control" href="#testimonials-carousel" role="button" data-slide="prev">
+						<span class="icon-prev"></span>
+					</a>
+					<a class="right carousel-control" href="#testimonials-carousel" role="button" data-slide="next">
+						<span class="icon-next"></span>
+					</a>
+				</div>
+
+
+				<!-- <div id="fullpage-wrapper">
 					<div class="section">
-						<div class="slide" data-anchor="1">
+						<div class="slide" data-anchor="slide-1">
 							<p>These ideas are nightmares to white parents Whose worst fear is a child with dyed hair and who likes earrings</p>
 							<h5>AATHMA</h5>
 						</div>
 
-						<div class="slide" data-anchor="2">
+						<div class="slide" data-anchor="slide-2">
 							<p>These ideas are nightmares to white parents Whose worst fear is a child with dyed hair and who likes earrings</p>
 							<h5>JUNKYARD GROOVE</h5>
 						</div>
 					</div>
-				</div>
+				</div> -->
 
 			</div>
 		</section>
@@ -221,7 +253,7 @@
 		</section>
 
 		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="//cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.js"></script>
+		<script src="/js/bootstrap-custom.min.js"></script>
 		<script src="/js/strawberry-fields.js"></script>
 	</body>
 </html>
